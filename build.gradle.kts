@@ -24,6 +24,7 @@ repositories {
 dependencies {
     implementation("com.jillesvangurp:rankquest-core:_")
     implementation("com.github.ajalt.clikt:clikt:_")
+    implementation("io.github.microutils:kotlin-logging:_")
 }
 
 

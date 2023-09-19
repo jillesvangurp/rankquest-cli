@@ -1,4 +1,4 @@
-rootProject.name = "rankquest-core"
+rootProject.name = "rankquest-cli"
 
 pluginManagement {
     repositories {
