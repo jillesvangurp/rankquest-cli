@@ -11,7 +11,10 @@ Companion to [rankquest-core](https://github.com/jillesvangurp/rankquest-core) a
 ## Docker
 
 ```bash
-docker run --network host -v $(pwd):/rankquest jillesvangurp/rankquest-cli -c demo/movies-config.json -t demo/testcases.json -v -f
+# help
+docker run -it --network host -v $(pwd):/rankquest jillesvangurp/rankquest-cli --help
+# run the demo scripts (requires elasticsearch)
+docker run -it --network host -v $(pwd):/rankquest jillesvangurp/rankquest-cli -c demo/movies-config.json -t demo/testcases.json -v -f
 ```
 
 ## Usage
