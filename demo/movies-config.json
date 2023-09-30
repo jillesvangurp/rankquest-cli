@@ -20,6 +20,7 @@
         {
             "name": "PrecisionAtK",
             "metric": "PrecisionAtK",
+            "expected": 0.75,
             "params": [
                 {
                     "name": "k",
@@ -34,6 +35,7 @@
         {
             "name": "RecallAtK",
             "metric": "RecallAtK",
+            "expected": 0.75,
             "params": [
                 {
                     "name": "k",
@@ -48,6 +50,7 @@
         {
             "name": "MeanReciprocalRank",
             "metric": "MeanReciprocalRank",
+            "expected": 0.75,
             "params": [
                 {
                     "name": "k",
@@ -62,6 +65,7 @@
         {
             "name": "ExpectedReciprocalRank",
             "metric": "ExpectedReciprocalRank",
+            "expected": 0.75,
             "params": [
                 {
                     "name": "k",
@@ -76,6 +80,7 @@
         {
             "name": "DiscountedCumulativeGain",
             "metric": "DiscountedCumulativeGain",
+            "expected": 30.0,
             "params": [
                 {
                     "name": "k",
@@ -90,6 +95,7 @@
         {
             "name": "NormalizedDiscountedCumulativeGain",
             "metric": "NormalizedDiscountedCumulativeGain",
+            "expected": 0.75,
             "params": [
                 {
                     "name": "k",
@@ -111,7 +117,7 @@
             "year"
         ],
         "host": "localhost",
-        "port": 9999,
+        "port": 9200,
         "https": false,
         "user": "",
         "password": "",
