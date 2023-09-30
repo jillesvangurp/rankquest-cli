@@ -25,6 +25,7 @@ dependencies {
     implementation("com.jillesvangurp:rankquest-core:_")
     implementation("com.github.ajalt.clikt:clikt:_")
     implementation("io.github.microutils:kotlin-logging:_")
+    implementation("com.github.ajalt.mordant:mordant:_")
     implementation("org.slf4j:slf4j-api:_")
     implementation("org.slf4j:jcl-over-slf4j:_")
     implementation("org.slf4j:log4j-over-slf4j:_")
