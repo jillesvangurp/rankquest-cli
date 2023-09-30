@@ -16,10 +16,10 @@ val workflow = workflow(
     name = "CI Build",
     on = listOf(
         PullRequest(
-            branches = listOf("master")
+            branches = listOf("main")
         ),
         Push(
-            branches = listOf("master")
+            branches = listOf("main")
         ),
         Release()
 
