@@ -6,7 +6,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     application
     kotlin("jvm")
-
+    `maven-publish`
 }
 
 repositories {
@@ -72,3 +72,16 @@ tasks.withType<Jar> {
         configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
     })
 }
+
+
+publishing {
+    repositories {
+        maven {
+            // GOOGLE_APPLICATION_CREDENTIALS env var must be set for this to work
+            // public repository is at https://maven.tryformation.com/releases
+            url = uri("gcs://mvn-public-tryformation/releases")
+            name = "FormationPublic"
+        }
+    }
+}
+
