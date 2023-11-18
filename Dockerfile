@@ -1,7 +1,5 @@
-FROM openjdk:17.0.2-slim
+FROM amazoncorretto:17-alpine
 LABEL maintainer="tryformation.com"
-
-RUN apt-get --yes update && apt-get --yes install curl
 
 COPY build/libs/rankquest-cli.jar /
 
