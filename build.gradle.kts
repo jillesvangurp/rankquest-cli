@@ -32,7 +32,6 @@ dependencies {
     implementation("org.slf4j:jul-to-slf4j:_")
     implementation("org.apache.logging.log4j:log4j-to-slf4j:_") // es seems to insist on log4j2
     implementation("ch.qos.logback:logback-classic:_")
-
 }
 
 

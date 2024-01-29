@@ -19,6 +19,7 @@ import kotlinx.serialization.encodeToString
 import mu.KotlinLogging
 import java.io.File
 import java.io.FileNotFoundException
+import kotlin.system.exitProcess
 import kotlin.time.measureTimedValue
 
 private val logger = KotlinLogging.logger { }
@@ -142,7 +143,7 @@ suspend fun runMetrics(
         if(failed.isNotEmpty()) {
             t.println(red("The following metrics: ${failed.map { it.second.configuration.name }} are below their expected values."))
             if(fail) {
-                System.exit(1)
+                exitProcess(1)
             }
         } else {
             t.println(green("All metrics are within acceptable range"))
