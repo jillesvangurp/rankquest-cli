@@ -1,4 +1,4 @@
-FROM amazoncorretto:17-alpine
+FROM amazoncorretto:21-alpine
 LABEL maintainer="tryformation.com"
 
 COPY build/libs/rankquest-cli.jar /
