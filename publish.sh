@@ -27,5 +27,5 @@ git push --tags
 
 docker build . -t jillesvangurp/rankquest-cli:v"$TAG"
 docker build . -t jillesvangurp/rankquest-cli:latest
-docker push jillesvangurp/rankquest-cli:v1$TAG
+docker push jillesvangurp/rankquest-cli:v$TAG
 docker push jillesvangurp/rankquest-cli:latest
