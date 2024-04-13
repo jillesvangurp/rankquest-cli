@@ -34,12 +34,6 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:_")
 }
 
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "17"
-}
-
-
 tasks.withType<Test> {
     useJUnitPlatform()
     testLogging.exceptionFormat = TestExceptionFormat.FULL
