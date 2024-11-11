@@ -11,6 +11,11 @@ echo $1 | grep -E -q '^[0-9]+\.[0-9]+(\.[0-9]+)?.*?$' || die "Semantic Version a
 
 [[ -z $(git status -s) ]] || die "git status is not clean"
 
+# Check for unpushed commits
+if [ -n "$(git log origin/$(git rev-parse --abbrev-ref HEAD)..HEAD)" ]; then
+    die "There are unpushed commits"
+fi
+
 export TAG=$1
 
 gradle -Pversion="$TAG" publish
